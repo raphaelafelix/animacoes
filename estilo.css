@@ -1,0 +1,13 @@
+img{
+    width: 100px;
+}
+
+@keyframes arrow {
+    0%{left:0;}
+    50%{left:400px;}
+    100%{left:0px;}
+}
+.arrow{
+    position: relative;
+    animation: arrow 5s linear infinite;
+}

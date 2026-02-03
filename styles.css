@@ -1,0 +1,60 @@
+.passar-o-mouse{
+    background:	#6A5ACD;
+    color:white;
+    padding:10px 20px;
+    transition:0.5s ease-in-out;
+}
+
+.passar-o-mouse:hover{
+    background: #483D8B;
+}
+
+.card{
+    width: 200px;
+    height:100px;
+    background: lightgray;
+    transition: 0.9s ease-in-out;
+}
+
+.card:hover{
+    width: 300px;
+}
+
+@keyframes piscar{
+    0%{opacity:1;}
+    50%{opacity:0;}
+    100%{opacity: 1;}
+}
+
+.botao-animado{
+    animation:piscar 1s infinite;
+}
+
+@keyframes colorido{
+    0%{ background-color: #FF69B4;}
+    50%{background-color: 	#B0E0E6 ;}
+    100%{ background-color: #FF69B4;}
+}
+
+.botao-colorido{
+    border:none;
+    padding: 15px 30px;
+    color:	white;
+    animation:colorido 2s infinite;
+}
+
+@keyframes girar{
+    from {transform: rotate(0deg);}
+    to { transform: rotate(360deg);}
+}
+
+.botao-girar{
+    animation: girar 2s infinite linear;
+    padding:15px 30px;
+    border:none;
+    color:#6A5ACD;
+}
+
+.botao-girar:hover{
+    animation-play-state: paused;
+}
