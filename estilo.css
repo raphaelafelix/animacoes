@@ -3,11 +3,19 @@ img{
 }
 
 @keyframes arrow {
-    0%{left:0;}
-    50%{left:400px;}
-    100%{left:0px;}
+    0%{left:0; transform: scaleX(1);}
+    50%{left:1800px; transform:scaleX(1);}
+    51%{left:1800px; transform:scaleX(-1);}
+    100%{left:0px; transform:scaleX(-1);}
 }
-.arrow{
+
+
+.snoopy-arrow{
     position: relative;
-    animation: arrow 5s linear infinite;
+    animation: arrow 10s linear infinite;
 }
+
+
+
+
+
